@@ -6,16 +6,16 @@ const Nav = () => {
 	const [showMenu, setShowMenu] = useState(false);
 
 	return (
-		<header className="absolute flex h-20 w-full items-center px-6 sm:h-32 sm:px-40">
-			<nav className="z-50 flex flex-grow items-center justify-between text-white">
+		<header className="absolute flex h-20 w-full items-center justify-center px-6 md:h-36">
+			<nav className="z-50 flex max-w-7xl flex-grow items-center justify-between text-white">
 				{/* Logo */}
-				<div className="relative h-7 w-40 sm:h-8 sm:w-48">
+				<div className="relative h-7 w-40 md:h-8 md:w-48">
 					<Image src="/logo.svg" layout="fill" objectFit="contain" />
 				</div>
 
 				<div>
 					{/* Desktop: Nav elements */}
-					<ul className="hidden space-x-12 font-[Alata] text-[18px] font-normal sm:flex">
+					<ul className="hidden space-x-10 font-[Alata] text-[18px] font-normal md:flex">
 						<li className="group flex flex-col items-center">
 							<a href="#About">About</a>
 							<hr className="nav-hr" />
@@ -39,7 +39,7 @@ const Nav = () => {
 					</ul>
 
 					{/* Mobile: Nav menu show controller */}
-					<div className="sm:hidden">
+					<div className="md:hidden">
 						{!showMenu ? (
 							<a
 								className="cursor-pointer"
@@ -69,19 +69,19 @@ const Nav = () => {
 			>
 				{/* Menu links */}
 				<ul className="ml-8 space-y-4 font-headers text-[30px] font-light uppercase text-white">
-					<li className="menu-link">
+					<li className="menu-link" onClick={() => setShowMenu(false)}>
 						<a href="#About">About</a>
 					</li>
-					<li className="menu-link">
+					<li className="menu-link" onClick={() => setShowMenu(false)}>
 						<a href="#Careers">Careers</a>
 					</li>
-					<li className="menu-link">
+					<li className="menu-link" onClick={() => setShowMenu(false)}>
 						<a href="#Events">Events</a>
 					</li>
-					<li className="menu-link">
+					<li className="menu-link" onClick={() => setShowMenu(false)}>
 						<a href="#Products">Products</a>
 					</li>
-					<li className="menu-link">
+					<li className="menu-link" onClick={() => setShowMenu(false)}>
 						<a href="#Support">Support</a>
 					</li>
 				</ul>
