@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Head from "next/head";
 
 //* components
@@ -8,8 +9,14 @@ import IntroSection from "../components/IntroSection";
 import Cards from "../components/Cards";
 
 export default function Home() {
+	const [showMenu, setShowMenu] = useState(false);
+
 	return (
-		<div className="max-w-screen h-screen w-screen overflow-x-hidden scroll-smooth">
+		<div
+			className={`max-w-screen h-screen w-screen overflow-x-hidden ${
+				showMenu && "overflow-y-hidden"
+			} scroll-smooth`}
+		>
 			<Head>
 				<title>Loopstudios Landing Page</title>
 				<link rel="icon" href="/favicon-32x32.png" />
@@ -26,7 +33,7 @@ export default function Home() {
 			</Head>
 
 			<header className="relative">
-				<Nav />
+				<Nav showMenu={showMenu} setShowMenu={setShowMenu} />
 				<Hero />
 			</header>
 

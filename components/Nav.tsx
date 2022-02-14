@@ -1,10 +1,12 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 
-const Nav = () => {
-	//* state
-	const [showMenu, setShowMenu] = useState(false);
+interface Props {
+	showMenu: boolean;
+	setShowMenu: Dispatch<SetStateAction<boolean>>;
+}
 
+const Nav = ({ showMenu, setShowMenu }: Props) => {
 	return (
 		<header className="absolute flex h-20 w-full items-center justify-center px-6 md:h-36">
 			<nav className="z-50 flex max-w-7xl flex-grow items-center justify-between text-white">
@@ -68,7 +70,7 @@ const Nav = () => {
 				}`}
 			>
 				{/* Menu links */}
-				<ul className="ml-8 space-y-4 font-headers text-[30px] font-light uppercase text-white">
+				<ul className="font-headers ml-8 space-y-4 text-[30px] font-light uppercase text-white">
 					<li className="menu-link" onClick={() => setShowMenu(false)}>
 						<a href="#About">About</a>
 					</li>
