@@ -12,7 +12,12 @@ const Nav = ({ showMenu, setShowMenu }: Props) => {
 			<nav className="z-50 flex max-w-7xl flex-grow items-center justify-between text-white">
 				{/* Logo */}
 				<div className="relative h-7 w-40 md:h-8 md:w-48">
-					<Image src="/logo.svg" layout="fill" objectFit="contain" />
+					<Image
+						src="/logo.svg"
+						layout="fill"
+						objectFit="contain"
+						alt="loopstudio text logo"
+					/>
 				</div>
 
 				<div>
@@ -48,7 +53,11 @@ const Nav = ({ showMenu, setShowMenu }: Props) => {
 								title="Open Menu"
 								onClick={() => setShowMenu(true)}
 							>
-								<img src="/icon-hamburger.svg" className="h-[18px] w-7" />
+								<img
+									src="/icon-hamburger.svg"
+									className="h-[18px] w-7"
+									alt="open nav menu mobile button burder icon"
+								/>
 							</a>
 						) : (
 							<a
@@ -56,7 +65,11 @@ const Nav = ({ showMenu, setShowMenu }: Props) => {
 								title="Close Menu"
 								onClick={() => setShowMenu(false)}
 							>
-								<img src="/icon-close.svg" className="h-5 w-5" />
+								<img
+									src="/icon-close.svg"
+									className="h-5 w-5"
+									alt="close nav menu mobile button burder icon"
+								/>
 							</a>
 						)}
 					</div>
@@ -70,7 +83,7 @@ const Nav = ({ showMenu, setShowMenu }: Props) => {
 				}`}
 			>
 				{/* Menu links */}
-				<ul className="font-headers ml-8 space-y-4 text-[30px] font-light uppercase text-white">
+				<ul className="ml-8 space-y-4 font-headers text-[30px] font-light uppercase text-white">
 					<li className="menu-link" onClick={() => setShowMenu(false)}>
 						<a href="#About">About</a>
 					</li>

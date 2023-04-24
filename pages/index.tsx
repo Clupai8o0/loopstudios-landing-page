@@ -18,6 +18,17 @@ export default function Home() {
 			} scroll-smooth`}
 		>
 			<Head>
+				<meta charSet="UTF-8" />
+				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0"
+				></meta>
+				<meta
+					name="description"
+					content="Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand."
+				/>
+
 				<title>Loopstudios Landing Page</title>
 				<link rel="icon" href="/favicon-32x32.png" />
 
@@ -32,10 +43,10 @@ export default function Home() {
 				/>
 			</Head>
 
-			<header className="relative">
+			<section className="relative">
 				<Nav showMenu={showMenu} setShowMenu={setShowMenu} />
 				<Hero />
-			</header>
+			</section>
 
 			<div className="w-full md:flex md:flex-col md:items-center">
 				<main className="max-w-7xl">

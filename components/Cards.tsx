@@ -55,7 +55,7 @@ const Cards = () => {
 
 			<div className="w-full gap-8 space-y-8 md:space-y-0 px-6 md:grid md:grid-cols-4 md:grid-rows-2 md:px-0 md:my-16">
 				{cards.map((card, index) => (
-					<Card key={index} title={card.title} image={card.image} />
+					<Card key={index} title={card.title} alt={card.title} image={card.image} />
 				))}
 			</div>
 

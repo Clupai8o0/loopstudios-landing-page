@@ -9,6 +9,7 @@ const IntroSection = () => {
 				{/* Mobile:Section Image */}
 				<Image
 					src="/mobile/image-interactive.jpg"
+					alt="mobile intro section image of a man wearing vr headset, playing, with his arms up like hes about to attack"
 					layout="fill"
 					objectFit="cover"
 					className="md:hidden"
@@ -17,6 +18,7 @@ const IntroSection = () => {
 				{/* Desktop:Section Image */}
 				<Image
 					src="/desktop/image-interactive.jpg"
+					alt="desktop intro section image of a man wearing vr headset, playing, with his arms up like hes about to attack"
 					layout="fill"
 					objectFit="cover"
 					className="hidden md:block"
@@ -27,7 +29,10 @@ const IntroSection = () => {
 			<div className="h-full w-[90%] text-center md:w-[40%]">
 				<div className="md:relative md:top-28 md:-left-28 md:w-[120%] md:bg-white md:px-20 md:py-20 md:text-left">
 					{/* Section title */}
-					<h1 id="About" className="font-headers mb-4 text-3xl md:text-4xl uppercase text-black">
+					<h1
+						id="About"
+						className="mb-4 font-headers text-3xl uppercase text-black md:text-4xl"
+					>
 						The leader in interactive VR
 					</h1>
 

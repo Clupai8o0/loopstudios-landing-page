@@ -8,13 +8,19 @@ const Hero = () => {
 			<div className="relative h-[650px] w-full md:h-[750px]">
 				{/* mobile:hero image */}
 				<div className="md:hidden">
-					<Image src="/mobile/image-hero.jpg" layout="fill" objectFit="cover" />
+					<Image
+						src="/mobile/image-hero.jpg"
+						alt="mobile hero image of a girl wearing vr headset and playing car racing game using car racing equipment"
+						layout="fill"
+						objectFit="cover"
+					/>
 				</div>
 
 				{/* desktop:hero image */}
 				<div className="hidden md:flex">
 					<Image
 						src="/desktop/image-hero.jpg"
+						alt="mobile hero image of a girl wearing vr headset and playing car racing game using car racing equipment"
 						layout="fill"
 						objectFit="cover"
 					/>
